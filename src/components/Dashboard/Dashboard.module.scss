@@ -1,0 +1,8 @@
+@import "./../../styles/variables.scss";
+
+.dashboard__container {
+    display: flex;
+    left: $AppBarWidth;
+    width: 100%;
+    height: 100%;
+}
