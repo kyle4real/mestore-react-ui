@@ -3,7 +3,6 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    // table-layout: fixed;
 
     &__head {
         border-radius: $borderRadius;
@@ -23,7 +22,6 @@
 
     tbody {
         display: block;
-        width: 100%;
         overflow: auto;
         height: 225px;
     }
@@ -35,7 +33,6 @@
 
     th,
     td {
-        flex: 1;
         width: 100%;
         font-size: 14px;
         font-weight: 700;
@@ -50,6 +47,7 @@
 
     td {
         font-weight: 400;
+        white-space: nowrap;
     }
 }
 
@@ -71,41 +69,3 @@
         border-bottom: 1px solid $dividerLine;
     }
 }
-
-// .table {
-//     display: flex;
-//     flex-direction: column;
-
-//     &__head {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding: 16px 24px;
-//         border-radius: $borderRadius;
-
-//         &.light__mode {
-//             background: $lightGray;
-//         }
-//         &.dark__mode {
-//             background: $lightBlack2;
-//         }
-
-//         .col {
-//             flex: 1;
-//             &:not(:last-child) {
-//                 margin-right: 32px;
-//             }
-//         }
-//     }
-
-//     &__data {
-//         display: flex;
-//         flex-direction: column;
-//         padding: 16px 24px;
-
-//         &__row {
-//             display: flex;
-//             justify-content: space-between;
-//         }
-//     }
-// }
