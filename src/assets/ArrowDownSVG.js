@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowDownSVG = () => {
+const ArrowDownSVG = ({ fillColor }) => {
     return (
         <svg
             width="24"
@@ -9,7 +9,7 @@ const ArrowDownSVG = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="black" />
+            <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill={fillColor} />
         </svg>
     );
 };

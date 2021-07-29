@@ -13,7 +13,7 @@ const Header = () => {
     const themeClass = uiCtx.theme === "light" ? classes.light__mode : classes.dark__mode;
     return (
         <div className={classes.header}>
-            <div className={`${classes.header__title} ${themeClass}`}>Dashboard</div>
+            <h2 className={`${classes.header__title} ${themeClass}`}>Dashboard</h2>
             <div className={classes.header__content}>
                 <div className={classes.header__content__links}>
                     <div className={classes.link__icon}>
