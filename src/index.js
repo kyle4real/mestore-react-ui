@@ -3,4 +3,11 @@ import ReactDOM from "react-dom";
 import "./styles/index.scss";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import UiProvider from "./store/UiProvider";
+
+ReactDOM.render(
+    <UiProvider>
+        <App />
+    </UiProvider>,
+    document.getElementById("root")
+);

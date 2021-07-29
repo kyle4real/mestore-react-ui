@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import UiContext from "../../store/ui-context";
 
 import classes from "./AppBar.module.scss";
 
@@ -50,7 +51,7 @@ const initialNavList = [
 ];
 
 const AppBar = () => {
-    const [theme, setTheme] = useState("light");
+    const uiCtx = useContext(UiContext);
     const [navList, setNavList] = useState(initialNavList);
 
     const isActiveHandler = (id) => {
@@ -61,12 +62,7 @@ const AppBar = () => {
         setNavList(arr);
     };
 
-    const themeToggleHandler = () => {
-        if (theme === "light") setTheme("dark");
-        else setTheme("light");
-    };
-
-    const themeClass = theme === "light" ? classes.light__mode : classes.dark__mode;
+    const themeClass = uiCtx.theme === "light" ? classes.light__mode : classes.dark__mode;
     return (
         <div className={`${classes.appbar__container} ${themeClass}`}>
             <div className={classes.appbar}>
@@ -88,7 +84,7 @@ const AppBar = () => {
                                     {icon(
                                         isActive
                                             ? `#33c863`
-                                            : theme === "light"
+                                            : uiCtx.theme === "light"
                                             ? `#929292`
                                             : `#fff`
                                     )}
@@ -102,7 +98,7 @@ const AppBar = () => {
                 </ul>
                 <div className={`${classes.appbar__divider} ${themeClass}`}></div>
                 <div className={classes[`appbar__theme-toggle`]}>
-                    <Switch toggle={themeToggleHandler} />
+                    <Switch toggle={uiCtx.toggleTheme} />
                     <span className={`${classes.toggle__title} ${themeClass}`}>Night Mode</span>
                 </div>
             </div>
