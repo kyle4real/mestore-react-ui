@@ -2,7 +2,6 @@
 
 .earnings {
     width: 100%;
-    height: 40vh;
     padding: 32px;
     border-radius: $borderRadius;
 
@@ -103,5 +102,10 @@
                 }
             }
         }
+    }
+
+    &__chart {
+        display: flex;
+        height: 350px;
     }
 }

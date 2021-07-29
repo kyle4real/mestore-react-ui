@@ -4,6 +4,7 @@ import UiContext from "../../../store/ui-context";
 import classes from "./Earnings.module.scss";
 
 import ArrowDownSVG from "../../../assets/ArrowDownSVG";
+import ChartContainer from "./Chart/Chart";
 
 const Earnings = () => {
     const uiCtx = useContext(UiContext);
@@ -29,7 +30,9 @@ const Earnings = () => {
                     </div>
                 </div>
             </div>
-            <div className={classes.earnings__chart}></div>
+            <div className={classes.earnings__chart}>
+                <ChartContainer />
+            </div>
         </div>
     );
 };

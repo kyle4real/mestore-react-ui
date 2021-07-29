@@ -5,7 +5,7 @@ import UiContext from "../../../store/ui-context";
 
 import classes from "./Header.module.scss";
 
-import ProfileIMG from "./../../../assets/profile.jpg";
+import ProfileIMG from "./../../../assets/profile.png";
 
 const Header = () => {
     const uiCtx = useContext(UiContext);
