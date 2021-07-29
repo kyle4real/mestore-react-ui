@@ -1,8 +1,23 @@
 @import "./../../styles/variables.scss";
 
 .dashboard__container {
-    display: flex;
-    left: $AppBarWidth;
+    margin-left: $AppBarWidth;
+    width: calc(100% - 15.875rem);
+    height: 100%;
+
+    padding: 40px 120px;
+
+    &.light__mode {
+        background: $lightGray;
+    }
+    &.dark__mode {
+        background: $dark;
+    }
+}
+
+.dashboard {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }

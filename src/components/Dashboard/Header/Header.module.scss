@@ -1,0 +1,82 @@
+@import "./../../../styles/variables.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+
+    &__title {
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: 0.4px;
+
+        &.light__mode {
+            color: $black;
+        }
+        &.dark__mode {
+            color: $white;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &__links {
+            display: flex;
+            align-items: center;
+            height: 24px;
+
+            .link__icon {
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+            }
+        }
+
+        &__divider {
+            // background: transparent;
+            height: 100%;
+            width: 1px;
+            margin: 0 32px;
+
+            &.light__mode {
+                background: $dividerLineLight;
+            }
+            &.dark__mode {
+                background: $white;
+            }
+        }
+
+        &__profile {
+            display: flex;
+            align-items: center;
+
+            .profile__name {
+                font-size: 14px;
+                margin-right: 16px;
+                &.light__mode {
+                    color: $black;
+                }
+                &.dark__mode {
+                    color: $white;
+                }
+            }
+            .profile__img {
+                display: flex;
+                align-items: center;
+                width: 42px;
+
+                .img {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
