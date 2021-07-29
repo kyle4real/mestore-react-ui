@@ -1,7 +1,5 @@
 import React, { Fragment, useContext, useEffect, useRef } from "react";
 
-import classes from "./ChartContainer.module.scss";
-
 import { addData } from "../../../../utils/ChartUtils";
 
 import { Chart, registerables } from "chart.js";

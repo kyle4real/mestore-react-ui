@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import UiContext from "../../store/ui-context";
+import CustomersList from "./CustomersList/CustomersList";
 
 import classes from "./Dashboard.module.scss";
 import Earnings from "./Earnings/Earnings";
 
 import Header from "./Header/Header";
+import ProductSales from "./ProductSales/ProductSales";
 import Totals from "./Totals/Totals";
 
 const Dashboard = () => {
@@ -16,6 +18,10 @@ const Dashboard = () => {
                 <Header />
                 <Totals />
                 <Earnings />
+                <div className={classes.dashboard__bottom}>
+                    <ProductSales />
+                    <CustomersList />
+                </div>
             </div>
         </div>
     );
