@@ -2,6 +2,8 @@ import React, { Fragment, useContext, useEffect, useRef } from "react";
 
 import classes from "./ChartContainer.module.scss";
 
+import { addData } from "../../../../utils/ChartUtils";
+
 import { Chart, registerables } from "chart.js";
 import UiContext from "../../../../store/ui-context";
 Chart.register(...registerables);
@@ -12,18 +14,18 @@ const data = {
     datasets: [
         {
             label: "Sales",
-            // backgroundColor: "rgba(51, 200, 99, .1)",
-            // fill: true,
+            backgroundColor: "rgba(51, 200, 99, .1)",
+            fill: true,
             borderColor: "#33c863",
-            data: [0, 10, 5, 2, 20, 30, 45],
+            data: addData(12),
             tension: 0.2,
         },
         {
             label: "Profit",
-            // backgroundColor: "rgba(242, 153, 74, .1)",
-            // fill: true,
+            backgroundColor: "rgba(242, 153, 74, .1)",
+            fill: true,
             borderColor: "#f2994a",
-            data: [0, 2, 3, 1, 14, 23, 30],
+            data: addData(12),
             tension: 0.2,
         },
     ],
