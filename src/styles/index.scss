@@ -8,11 +8,23 @@
 
 body {
     width: 100%;
-    height: 1286px;
-    // overflow: hidden;
     font-family: $mulish;
 }
 
 #root {
     height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg;
+    border-radius: $borderRadius;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $darkGray;
+    border-radius: $borderRadius;
 }

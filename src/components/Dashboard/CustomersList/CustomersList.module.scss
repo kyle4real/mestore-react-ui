@@ -16,4 +16,23 @@
         background: $lightBlack;
         border: 1px solid $dividerLine;
     }
+
+    &__header {
+        display: flex;
+        margin-bottom: 24px;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: $letterSpacing;
+            line-height: 25px;
+
+            &.light__mode {
+                color: $black;
+            }
+            &.dark__mode {
+                color: $white;
+            }
+        }
+    }
 }
