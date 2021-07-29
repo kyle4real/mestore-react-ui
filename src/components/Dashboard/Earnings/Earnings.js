@@ -4,7 +4,7 @@ import UiContext from "../../../store/ui-context";
 import classes from "./Earnings.module.scss";
 
 import ArrowDownSVG from "../../../assets/ArrowDownSVG";
-import ChartContainer from "./Chart/Chart";
+import ChartContainer from "./ChartContainer/ChartContainer";
 
 const Earnings = () => {
     const uiCtx = useContext(UiContext);
