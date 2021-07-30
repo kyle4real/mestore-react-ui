@@ -76,11 +76,11 @@ const ChartContainer = () => {
         return () => chartRef.current.destroy();
     }, [uiCtx.theme]);
 
-    const addHandler = () => {
-        const chart = chartRef.current;
-        chart.data.datasets[0].data.push(Math.round(Math.random() * 100));
-        chart.update();
-    };
+    // const addHandler = () => {
+    //     const chart = chartRef.current;
+    //     chart.data.datasets[0].data.push(Math.round(Math.random() * 100));
+    //     chart.update();
+    // };
 
     return (
         <Fragment>

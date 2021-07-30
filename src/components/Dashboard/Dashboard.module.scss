@@ -37,7 +37,7 @@
             background: $white;
         }
         ::-webkit-scrollbar-thumb {
-            background: $dividerLineLight;
+            background: $lightGray;
         }
     }
     .dark__mode {
@@ -45,7 +45,7 @@
             background: $lightBlack;
         }
         ::-webkit-scrollbar-thumb {
-            background: $dividerLine;
+            background: $lightBlack2;
         }
     }
 }
@@ -54,6 +54,7 @@
     margin-left: $AppBarWidth;
     width: calc(100% - 15.875rem);
     height: 1286px;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -74,8 +75,8 @@
     flex-direction: column;
 
     &__bottom {
-        height: 100%;
         display: flex;
         margin-top: 40px;
+        height: 450px;
     }
 }

@@ -52,6 +52,22 @@ const productSalesData = [
         amount: "106.54",
         status: false,
     },
+    {
+        id: 7,
+        productName: "Northface Sweater",
+        sales: "256",
+        stock: "0",
+        amount: "106.54",
+        status: false,
+    },
+    {
+        id: 8,
+        productName: "Northface Sweater",
+        sales: "256",
+        stock: "0",
+        amount: "106.54",
+        status: false,
+    },
 ];
 
 const SalesTable = () => {
