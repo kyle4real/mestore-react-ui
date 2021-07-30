@@ -1,9 +1,62 @@
 @import "./../../styles/variables.scss";
 
+.scroll {
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    z-index: 5;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &.light__mode::-webkit-scrollbar-track {
+        background: $white;
+    }
+    &.dark__mode::-webkit-scrollbar-track {
+        background: $lightBlack;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: $borderRadius;
+    }
+    &.light__mode::-webkit-scrollbar-thumb {
+        background: $dividerLineLight;
+    }
+    &.dark__mode::-webkit-scrollbar-thumb {
+        background: $dividerLine;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: $borderRadius;
+    }
+    .light__mode {
+        ::-webkit-scrollbar-track {
+            background: $white;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: $dividerLineLight;
+        }
+    }
+    .dark__mode {
+        ::-webkit-scrollbar-track {
+            background: $lightBlack;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: $dividerLine;
+        }
+    }
+}
+
 .dashboard__container {
     margin-left: $AppBarWidth;
     width: calc(100% - 15.875rem);
     height: 1286px;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 40px 120px;
 
     &.light__mode {

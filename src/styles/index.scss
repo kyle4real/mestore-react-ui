@@ -14,17 +14,3 @@ body {
 #root {
     height: 100%;
 }
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: $bg;
-    border-radius: $borderRadius;
-}
-
-::-webkit-scrollbar-thumb {
-    background: $darkGray;
-    border-radius: $borderRadius;
-}

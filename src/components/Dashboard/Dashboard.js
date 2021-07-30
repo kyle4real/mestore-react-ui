@@ -13,14 +13,16 @@ const Dashboard = () => {
     const uiCtx = useContext(UiContext);
     const themeClass = uiCtx.theme === "light" ? classes.light__mode : classes.dark__mode;
     return (
-        <div className={`${classes.dashboard__container} ${themeClass}`}>
-            <div className={classes.dashboard}>
-                <Header />
-                <Totals />
-                <Earnings />
-                <div className={classes.dashboard__bottom}>
-                    <ProductSales />
-                    <CustomersList />
+        <div className={`${classes.scroll} ${themeClass}`}>
+            <div className={`${classes.dashboard__container} ${themeClass}`}>
+                <div className={classes.dashboard}>
+                    <Header />
+                    <Totals />
+                    <Earnings />
+                    <div className={classes.dashboard__bottom}>
+                        <ProductSales />
+                        <CustomersList />
+                    </div>
                 </div>
             </div>
         </div>
