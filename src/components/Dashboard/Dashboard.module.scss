@@ -5,6 +5,7 @@
     height: 100vh;
     overflow: auto;
     z-index: 5;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         width: 8px;

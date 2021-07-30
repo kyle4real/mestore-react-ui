@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
+    min-width: 900px;
 
     &__card {
         &:not(:last-child) {
