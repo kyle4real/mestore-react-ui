@@ -3,10 +3,10 @@
 .productsales {
     flex: 4;
     height: 100%;
-    margin-right: 40px;
     border-radius: $borderRadius;
-
     padding: 32px;
+
+    margin-right: 40px;
 
     &.light__mode {
         background: $white;

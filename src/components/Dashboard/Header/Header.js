@@ -19,13 +19,13 @@ const Header = () => {
                     <div className={classes.link__icon}>
                         <SearchSVG fillColor={iconFill} />
                     </div>
-                    <div className={classes.link__icon}>
+                    <div className={`${classes.link__icon} ${classes.link__icon__notification}`}>
                         <NotificationSVG fillColor={iconFill} />
                     </div>
                 </div>
                 <div className={`${classes.header__content__divider} ${themeClass}`} />
                 <div className={classes.header__content__profile}>
-                    <span className={`${classes.profile__name} ${themeClass}`}>Jacob</span>
+                    <span className={`${classes.profile__name} ${themeClass}`}>CodeFocus</span>
                     <div className={classes.profile__img}>
                         <img
                             src={ProfileIMG}

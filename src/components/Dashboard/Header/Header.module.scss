@@ -33,8 +33,26 @@
 
             .link__icon {
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
                 &:not(:last-child) {
                     margin-right: 24px;
+                }
+            }
+            .link__icon__notification {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    right: 3px;
+                    top: 3.5px;
+                    background: $green;
+                    border-radius: 50%;
                 }
             }
         }
@@ -58,8 +76,10 @@
             align-items: center;
 
             .profile__name {
+                cursor: pointer;
                 font-size: 14px;
-                margin-right: 16px;
+                font-weight: 600;
+                margin-right: 24px;
                 letter-spacing: $letterSpacing;
                 &.light__mode {
                     color: $black;
@@ -67,11 +87,17 @@
                 &.dark__mode {
                     color: $white;
                 }
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             .profile__img {
-                display: flex;
-                align-items: center;
-                width: 42px;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                // border: solid 1px $darkGray;
+                border-radius: 50%;
+                box-shadow: 0px 0px 2px rgba($dark, 0.3);
 
                 .img {
                     border-radius: 50%;
